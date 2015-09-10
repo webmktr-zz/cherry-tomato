@@ -14,8 +14,11 @@
       //insert into database
       Pomodoros.insert({goal: goal, startDate: new Date(), userID: Meteor.user()._id});
 
-      //clear the vallue
+      //clear the value
       template.find('form').reset();
+
+      //call a method on the server
+      Meteor.call('pomodoroFinished');
     },
 
     "click .deleteButton": function (event) {

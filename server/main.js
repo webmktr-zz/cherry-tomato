@@ -12,3 +12,10 @@ Meteor.publish("userData", function () {
 Meteor.publish("pomodoros", function () {
   return Pomodoros.find({ userID: this.userId });
 });
+
+Meteor.methods({
+  pomodoroFinished:  function () {
+    //Meteor.setTimeout(console.log("Finished pomodoro"), 500);
+    console.log("finished pomodoro");
+  }
+})
