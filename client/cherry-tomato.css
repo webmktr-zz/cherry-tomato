@@ -55,6 +55,7 @@ nav a:hover {
 }
 #login-buttons a {
   text-decoration: none;
+  float: right;
 }
 
 h2 {

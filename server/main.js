@@ -6,3 +6,9 @@ Meteor.publish("userData", function () {
     this.ready();
   }
 });
+
+// Publish the logged in user's posts
+
+Meteor.publish("pomodoros", function () {
+  return Pomodoros.find({ userID: this.userId });
+});

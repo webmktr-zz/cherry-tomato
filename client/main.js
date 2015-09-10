@@ -3,3 +3,4 @@ Accounts.ui.config({
 });
 
 Meteor.subscribe("userData");
+Meteor.subscribe("pomodoros");

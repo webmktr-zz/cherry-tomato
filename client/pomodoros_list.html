@@ -1,10 +1,10 @@
 <template name="pomodorosList">
-  <p>This is a list of pomodoros</p>
   <form id="new-pomodoro">
     <input type="text" name="goal" placeholder="What's the goal?">
     <input type="submit" value="Go">
   </form>
 
+  <h2>This is a list of pomodoros</h2>
   <ul class="pomodoro-list">
     {{#each list}}
     <li class="pomodoro">{{goal}} | {{startDate}} <button type="button" class="deleteButton"> X </button> </li>

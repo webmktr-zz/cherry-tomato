@@ -1,6 +1,6 @@
   Template.pomodorosList.helpers({
     list: function () {
-      return Pomodoros.find();
+      return Pomodoros.find({userID: Meteor.user()._id}, {sort: {startDate: -1}});
     }
   });
   Template.pomodorosList.events({
