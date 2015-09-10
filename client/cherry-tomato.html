@@ -3,9 +3,10 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
+  {{> loginButtons}}
+    {{#if currentUser}}
   {{> pomodorosList}}
+  {{/if}}
 </body>
 
 

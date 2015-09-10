@@ -12,7 +12,7 @@
       //validate
 
       //insert into database
-      Pomodoros.insert({goal: goal, startDate: new Date()});
+      Pomodoros.insert({goal: goal, startDate: new Date(), userID: Meteor.user()._id});
 
       //clear the vallue
       template.find('form').reset();
