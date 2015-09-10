@@ -1,13 +1,3 @@
-<head>
-  <title>cherry-tomato</title>
-</head>
-
-<body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> pomodorosList}}
-</body>
-
 <template name="pomodorosList">
   <p>This is a list of pomodoros</p>
   <form id="new-pomodoro">
@@ -20,8 +10,4 @@
     <li class="pomodoro">{{goal}} | {{startDate}} <button type="button" class="deleteButton"> X </button> </li>
     {{/each}}
   </ul>
-
 </template>
-
-
-

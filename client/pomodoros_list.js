@@ -1,7 +1,3 @@
-Pomodoros = new Mongo.Collection("pomodoros"); //create a collection for Pomodoros if it doesn't already exist.
-
-if (Meteor.isClient) {
-
   Template.pomodorosList.helpers({
     list: function () {
       return Pomodoros.find();
@@ -26,12 +22,3 @@ if (Meteor.isClient) {
       Pomodoros.remove({_id: this._id});
     }
   });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
-
-
